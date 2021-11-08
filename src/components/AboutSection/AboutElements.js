@@ -44,5 +44,48 @@ export const AboutRow = styled.div`
  grid-template-areas: 'column1 column2';
 `
 
+export const AboutColumn1 = styled.div`
+ text-align: center;
+ padding: 10px;
+ margin-bottom: 10px;
+ grid-area: column1;
+`
 
+export const AboutColumn2 = styled.div`
+ text-align: center;
+ padding: 10px;
+ margin-bottom: 10px;
+ grid-area: column2;
+`
+
+export const AboutTextWrapper = styled.div`
+ padding-top: 0;
+ padding-bottom: 50px;
+ max-width: 500px;
+`
+
+export const AboutHeading = styled.h1`
+ margin-bottom: 25px; 
+ font-size: 45px;
+ line-height: 1;
+ font-weight: 750;
+ text-transform: uppercase;
+ color: #fff;
+
+ @media screen and (max-width: 480px) {
+  font-size: 30px;
+ }
+`
+
+export const AboutDescription = styled.p`
+ max-width: 430px;
+ margin-bottom: 30px;
+ font-size: 19px;
+ line-height: 25px;
+ color: #fff;
+
+ @media screen and (max-width: 480px) {
+  font-size: 15px;
+ }
+`
 
