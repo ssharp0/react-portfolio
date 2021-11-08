@@ -33,3 +33,35 @@ export const ContactRow = styled.div`
  grid-template-areas: 'column2 column1';
 `
 
+export const ContactColumn1 = styled.div`
+ text-align: center;
+ padding: 0 10px;
+ margin-bottom: 10px;
+ grid-area: column1;
+`
+
+export const ContactColumn2 = styled.div`
+ text-align: center;
+ padding: 0 10px;
+ margin-bottom: 10px;
+ grid-area: column2;
+`
+
+export const ContactTextWrapper = styled.div`
+ padding-top: 0;
+ padding-bottom: 50px;
+ max-width: 550px;
+`
+
+export const ContactHeading = styled.h1`
+ margin-bottom: 25px;
+ font-size: 45px;
+ line-height: 1;
+ font-weight: 750;
+ text-transform: uppercase;
+ color: white;
+
+ @media screen and (max-width: 480px) {
+  font-size: 30px;
+ }
+`
