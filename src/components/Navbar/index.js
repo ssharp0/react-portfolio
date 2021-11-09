@@ -41,7 +41,15 @@ const Navbar = ({ toggle }) => {
       <IconContext.Provider value={{ color: '#fff' }}>
         <NavSection positionScrollNav={positionScrollNav}>
           <NavContainer>
-
+            <NavLabel to="/" onClick={toggleHome}>My Portfolio</NavLabel>
+            <MobileDrop onClick={toggle}>
+              <CgMoreVerticalR />
+            </MobileDrop>
+            <NavMenu>
+              {NavbarData.map(navSections => (
+                  <NavScrollLinks to={navSections.section} offset={-65} smooth={true} duration={1000} spy={true} exact='true'>{navSections.label}</NavScrollLinks>
+              ))}
+            </NavMenu>
           </NavContainer>
         </NavSection>
       </IconContext.Provider>
