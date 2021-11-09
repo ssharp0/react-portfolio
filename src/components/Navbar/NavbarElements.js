@@ -18,6 +18,33 @@ export const NavSection = styled.nav`
  }
 `
 
+export const MobileDrop = styled.div`
+ display: none;
+
+ @media screen and (max-width: 768px) {
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(-100%, 50%);
+ }
+`
+
+export const NavMenu = styled.ul`
+ display: flex;
+ margin-right: -20px;
+ align-items: center;
+ list-style: none;
+ text-align: center;
+
+ @media screen and (max-width: 768px) {
+  display: none;
+ }
+`
+
 export const NavContainer = styled.div`
  width: 100%;
  padding: 25px;
