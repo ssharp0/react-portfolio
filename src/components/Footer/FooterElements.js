@@ -24,14 +24,6 @@ export const FooterLinksContainer = styled.div`
  }
 `
 
-export const FooterLinksWrapper = styled.div`
- display: flex;
-
- @media screen and (max-width: 820px) {
-  flex-direction: column;
- }
-`
-
 export const FooterLinkItems = styled.div`
  display: flex;
  flex-direction: column;
@@ -60,7 +52,7 @@ export const FooterLinkHeading = styled.h1`
  }
 `
 
-export const WebsiteDetails = styled.h5`
+export const FooterSiteDetails = styled.h5`
  color: #fff;
  margin-bottom: 10px;
 `
