@@ -19,7 +19,11 @@ const SidebarNav = ({ isSideNavOpen, toggle }) => {
     <SideNavCloseIcon />
    </IconDiv>
    <SideNavWrapper>
-
+    <SideNavMenu>
+     {SidebarNavData.map(sectionNav => (
+      <SideNavItem to={sectionNav.section} onClick={toggle}>{sectionNav.label}</SideNavItem>
+     ))}
+    </SideNavMenu>
     <SideNavBtnWrap>
     </SideNavBtnWrap>
    </SideNavWrapper>
