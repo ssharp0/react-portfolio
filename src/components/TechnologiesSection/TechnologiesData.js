@@ -72,5 +72,5 @@ export const iconList = [
 
 export const TechnologiesData = {
  heading: 'Technology Highlights',
- technologiesDesc: 'Some of the technologies I work with and enjoy'
+ technologiesDesc: 'Some of the technologies I work with and enjoy.'
 }
