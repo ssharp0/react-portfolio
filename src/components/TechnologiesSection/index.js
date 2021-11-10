@@ -10,7 +10,7 @@ import {
  TechnologiesHeading, 
  TechnologiesDescription, 
  TechnologiesColummItem, 
- TechnologiesColumnBadge 
+ TechnologiesColumnBadge,
 } from './TechnologiesElements'
 
 import { iconList, TechnologiesData } from './TechnologiesData'
@@ -28,7 +28,9 @@ const TechnologiesSection = () => {
      <TechnologiesRow>
       <TechnologiesColumn1>
        <TechnologiesTextWrapper>
+        {/* <Paper style={{ background: '#263C41' }}> */}
         <TechnologiesHeading>{TechnologiesData.heading}</TechnologiesHeading>
+        {/* </Paper> */}
         <hr />
         <br />
         <TechnologiesDescription>{TechnologiesData.technologiesDesc}</TechnologiesDescription>
