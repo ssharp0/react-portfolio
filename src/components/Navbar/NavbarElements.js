@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import { Link as LinkRouter } from 'react-router-dom'
 import { Link as LinkScroll } from 'react-scroll'
+import { CgMoreVerticalR } from 'react-icons/cg'
 
 export const NavSection = styled.nav`
  background: ${({ positionScrollNav }) => (positionScrollNav ? '#A56336' : 'transparent')};
@@ -8,7 +9,7 @@ export const NavSection = styled.nav`
  height: 65px;
  display: flex;
  justify-content: center;
- font-size: 1rem;
+ font-size: 1.2rem;
  top: 0;
  z-index: 10;
  position: sticky;
@@ -33,7 +34,11 @@ export const MobileDrop = styled.div`
  }
 `
 
-export const NavMenu = styled.ul`
+export const SideNavOpenIcon = styled(CgMoreVerticalR)`
+ color: #fff;
+`
+
+export const NavMenu = styled.li`
  display: flex;
  margin-right: -20px;
  align-items: center;

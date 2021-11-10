@@ -21,7 +21,7 @@ export const AboutWrapper = styled.div`
  padding: 25px;
 `
 
-export const AboutImgWrap = styled.div`
+export const AboutImgDiv = styled.div`
  text-align: center;
  max-width: 555px;
  height: 100%;
@@ -45,7 +45,6 @@ export const AboutRow = styled.div`
 `
 
 export const AboutColumn1 = styled.div`
- text-align: center;
  padding: 10px;
  margin-bottom: 10px;
  grid-area: column1;
@@ -65,6 +64,7 @@ export const AboutTextWrapper = styled.div`
 `
 
 export const AboutHeading = styled.h1`
+ text-align: center;
  margin-bottom: 25px; 
  font-size: 45px;
  line-height: 1;
@@ -73,7 +73,7 @@ export const AboutHeading = styled.h1`
  color: #fff;
 
  @media screen and (max-width: 480px) {
-  font-size: 30px;
+  font-size: 25px;
  }
 `
 

@@ -35,7 +35,7 @@ export const ProjectsWrapper = styled.div`
 
  @media screen and (max-width: 768px) {
   grid-template-columns: 1fr;
-  padding: 1.8px;
+  padding: 1.5px;
  }
 `
 
@@ -70,7 +70,6 @@ export const ProjectsIcon = styled.img`
   transform: scale(1.05);
   box-shadow: 0 5px 5px rgba(0,0,0,0.5);
 }
-
 `
 
 export const ProjectsHeading = styled.h1`
@@ -80,6 +79,7 @@ export const ProjectsHeading = styled.h1`
  font-weight: 750;
  text-transform: uppercase;
  color: #fff;
+ text-align: center;
 
  @media screen and (max-width: 480px) {
   font-size: 30px;

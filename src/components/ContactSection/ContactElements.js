@@ -18,7 +18,7 @@ export const ContactWrapper = styled.div`
  z-index: 1;
  margin-right: auto;
  margin-left: auto;
- padding: 0 25px;
+ padding: 25px;
 `
 
 export const ContactImgWrap = styled.div`
@@ -45,12 +45,6 @@ export const ContactColumn2 = styled.div`
  padding: 0 10px;
  margin-bottom: 10px;
  grid-area: column2;
-`
-
-export const ContactTextWrapper = styled.div`
- padding-top: 0;
- padding-bottom: 50px;
- max-width: 550px;
 `
 
 export const ContactHeading = styled.h1`
