@@ -5,7 +5,7 @@ The purpose of this site is to showcase my personal portfolio and highlight a gr
 
 The site displays a little bit about myself, some of my technical skills, a few highlighted team projects and contact information.
 
-#### Deployed Application: [Portfolio]()
+#### Deployed Application: [Portfolio](https://ssharp0.github.io/react-portfolio/)
 
 #### [Gitub Repo](https://github.com/ssharp0/react-portfolio)
 
