@@ -73,20 +73,6 @@ export const TechnologiesDescription = styled.p`
  }
 `
 
-export const BtnWrap = styled.div`
- display: flex;
- justify-content: flex-start;
-`
-
-export const TechnologiesColumns = styled.div`
- display: grid;
- grid-template-columns: repeat(4, 1fr);
-
- @media screen and (max-width: 480px) {
- grid-template-columns: repeat(2, 1fr);
-}
-`
-
 export const TechnologiesColummItem = styled.div`
  font-size: 25px;
  margin-bottom: 35px;
