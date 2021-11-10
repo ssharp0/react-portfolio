@@ -2,12 +2,12 @@ import React from 'react'
 
 import { 
  SideNavContainer, 
+ SideNavHeaderPaper,
+ SideNavHeader,
  IconDiv, 
  SideNavCloseIcon, 
- SideNavWrapper, 
  SideNavMenu, 
  SideNavItem, 
- SideNavBtnWrap, 
 } from './SidebarNavElements'
 
 import { SidebarNavData } from './SidebarNavData'
@@ -18,15 +18,16 @@ const SidebarNav = ({ isSideNavOpen, toggle }) => {
    <IconDiv onClick={toggle}>
     <SideNavCloseIcon />
    </IconDiv>
-   <SideNavWrapper>
     <SideNavMenu>
+     <SideNavHeaderPaper elevation={10}>
+      <SideNavHeader>
+       Portfolio Site
+      </SideNavHeader>
+     </SideNavHeaderPaper>
      {SidebarNavData.map(sectionNav => (
       <SideNavItem to={sectionNav.section} onClick={toggle}>{sectionNav.label}</SideNavItem>
      ))}
     </SideNavMenu>
-    <SideNavBtnWrap>
-    </SideNavBtnWrap>
-   </SideNavWrapper>
   </SideNavContainer>
  )
 }

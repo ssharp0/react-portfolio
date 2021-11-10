@@ -6,7 +6,6 @@ import {
  ContactRow, 
  ContactColumn1, 
  ContactColumn2, 
- ContactTextWrapper, 
  ContactHeading, 
  ContactImgWrap, 
 } from './ContactElements'
@@ -25,7 +24,6 @@ const ContactSection = () => {
     <ContactWrapper>
      <ContactRow>
       <ContactColumn1>
-       <ContactTextWrapper>
         <ContactHeading>{contactData.heading}</ContactHeading>
         <hr />
         <br />
@@ -41,7 +39,6 @@ const ContactSection = () => {
            </AccordionDetails>
          </Accordion>
         })}
-       </ContactTextWrapper>
       </ContactColumn1>
       <ContactColumn2>
        <ContactImgWrap>

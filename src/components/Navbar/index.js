@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 
-import { CgMoreVerticalR } from 'react-icons/cg'
 import { IconContext } from 'react-icons/lib'
 
 import { animateScroll as scroll } from 'react-scroll'
@@ -12,6 +11,7 @@ import {
   MobileDrop, 
   NavMenu,  
   NavScrollLinks,
+  SideNavOpenIcon,
 } from './NavbarElements'
 
 import { NavbarData } from './NavbarData'
@@ -43,7 +43,7 @@ const Navbar = ({ toggle }) => {
           <NavContainer>
             <NavLabel to="/" onClick={toggleHome}>My Portfolio</NavLabel>
             <MobileDrop onClick={toggle}>
-              <CgMoreVerticalR />
+              <SideNavOpenIcon/>
             </MobileDrop>
             <NavMenu>
               {NavbarData.map(navSections => (

@@ -9,7 +9,7 @@ import {
  AboutTextWrapper, 
  AboutHeading, 
  AboutDescription, 
- AboutImgWrap, 
+ AboutImgDiv, 
  AboutImg 
 } from './AboutElements'
 
@@ -28,19 +28,27 @@ const AboutSection = () => {
      <AboutRow>
       <AboutColumn1>
        <AboutTextWrapper>
+        {/* <Paper style={{ background: '#6F523B' }}> */}
         <AboutHeading>{aboutData.heading}</AboutHeading>
+        {/* </Paper> */}
         <hr />
         <br />
         <AboutDescription>
          {aboutData.aboutDesc}
         </AboutDescription>
+        <AboutDescription>
+         {aboutData.aboutDesc2}
+        </AboutDescription>
+        <AboutDescription>
+         {aboutData.aboutDesc3}
+        </AboutDescription>
        </AboutTextWrapper>
       </AboutColumn1>
       <AboutColumn2>
        <Paper elevation={8} style={{backgroundColor: '#6F523B'}}>
-        <AboutImgWrap>
+        <AboutImgDiv>
          <AboutImg src={SelfImg} alt='Self Pic' />
-        </AboutImgWrap>
+        </AboutImgDiv>
        </Paper>
       </AboutColumn2>
      </AboutRow>
